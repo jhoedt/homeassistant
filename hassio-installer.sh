@@ -12,8 +12,8 @@ warn "If you want more control over your own system, run"
 warn "Home Assistant as a VM or run Home Assistant Core"
 warn "via a Docker container."
 warn ""
-echo 'Please typ "y" to continue this installation'
-read x
+echo "Please typ y to continue this installation"
+read -r x
 if [ "$x" != "y" ]; then
   echo "OK, bye!"
   exit 1
