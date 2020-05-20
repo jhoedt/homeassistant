@@ -14,8 +14,7 @@ warn "via a Docker container."
 warn ""
 echo 'Please typ "y" to continue this installation'
 read x
-if [ "$x" != "y" ];
-then
+if [ "$x" != "y" ]; then
   echo "OK, bye!"
   exit 1
 fi
