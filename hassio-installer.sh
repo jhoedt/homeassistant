@@ -12,9 +12,10 @@ warn "If you want more control over your own system, run"
 warn "Home Assistant as a VM or run Home Assistant Core"
 warn "via a Docker container."
 warn ""
-echo 
-read -p "Are you sure to continue? (Y/n)" REPLY 
-if [[ "$REPLY"  != [Yy] ]]; then
+echo 'Please typ "y" to continue this installation'
+read x
+if [ "$x" != "y" ]
+then
   echo "OK, bye!"
   exit 1
 fi
